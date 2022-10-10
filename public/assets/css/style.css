@@ -646,14 +646,14 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
 }
 .top-header .top-menu > li > a {
   color: #333;
-  font-size: 15px;
+  font-size: 14px;
   padding: 0 8px;
 }
 .top-header .top-menu > li > a:hover, .top-header .top-menu > li > a:focus {
   background: transparent;
 }
 .top-header .top-menu > li > a i {
-  font-size: 16px;
+  font-size: 28px;
   margin-right: 2px;
   vertical-align: middle;
 }
@@ -672,23 +672,27 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
 }
 
 .fav-dropdown {
-      margin: 0px 60px 0 0;
+      margin: 0px 120px 0 0;
 }
 
-.cart-dropdown .media, .fav-dropdown .media {
+.user-dropdown {
+      margin: 0px -60px 0 0;
+}
+
+.cart-dropdown .media, .fav-dropdown .media, .user-dropdown .media {
   position: relative;
   border-bottom: 1px solid #dedede;
   padding-bottom: 15px;
 }
-.cart-dropdown .media .pull-left, .fav-dropdown .media .pull-left {
+.cart-dropdown .media .pull-left, .fav-dropdown .media .pull-left, .user-dropdown .media .pull-left {
   padding-right: 15px;
 }
 
-.cart-dropdown img, .fav-dropdown img {
+.cart-dropdown img, .fav-dropdown img, .user-dropdown img  {
     width: 60px;
 }
 
-.cart-dropdown h4, .fav-dropdown h4 {
+.cart-dropdown h4, .fav-dropdown h4, .user-dropdown h4 {
   color: #000;
   font-weight: 300;
   font-size: 14px;

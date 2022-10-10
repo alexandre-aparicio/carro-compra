@@ -12,6 +12,8 @@ use App\Http\Controllers\CustomAuthController;
 Route::get('/', [ProductoController::class, 'index'])->name('index');
 Route::get('productos/{id}', [ProductoController::class, 'show'])->name('single-product');
 
+
+
 //Route::get('categoria/{id}', [CategoriaController::class, 'show'])->name('categoria');
 
 //Route::post('cart-insert/', [CarroController::class, 'store'])->name('cart-insert');
@@ -19,7 +21,7 @@ Route::get('productos/{id}', [ProductoController::class, 'show'])->name('single-
 //Route::delete('cart-delete/{id}', [CarroController::class, 'destroy'])->name('cart-delete');
 
 
-Route::get('dashboard', [CustomAuthController::class, 'dashboard']); 
+Route::get('dashboard', [CustomAuthController::class, 'dashboard'])->name('dashboard'); 
 Route::get('login', [CustomAuthController::class, 'index'])->name('login');
 Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom'); 
 Route::get('registration', [CustomAuthController::class, 'registration'])->name('register-user');

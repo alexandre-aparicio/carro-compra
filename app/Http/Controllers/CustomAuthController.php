@@ -25,9 +25,18 @@ class CustomAuthController extends Controller
         ]);
    
         $credentials = $request->only('email', 'password');
+       
+
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('/')
-                        ->withSuccess('Signed in');
+
+            if (Auth::user()->role == 'admin') {
+
+            return redirect()->route('dashboard');
+        
+        } else {
+
+            return redirect()->intended('/')->withSuccess('Signed in');
+        }
         }
   
         return redirect("login")->withSuccess('Login details are not valid');
@@ -77,7 +86,7 @@ class CustomAuthController extends Controller
     public function dashboard()
     {
         if(Auth::check()){
-            return view('welcome');
+            return view('dashboard.main-dash');
         }
   
         return redirect("login")->withSuccess('You are not allowed to access');

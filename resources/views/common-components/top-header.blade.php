@@ -8,7 +8,7 @@
 					<span>0129- 12323-123123</span>
 				</div>
 			</div>
-			<div class="col-md-4 col-xs-12 col-sm-4">
+			<div class="col-md-2 col-xs-12 col-sm-4">
 				<!-- Site Logo -->
 				<div class="logo text-center">
 					<a href="index.html">
@@ -27,7 +27,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-md-4 col-xs-12 col-sm-4">
+			<div class="col-md-6 col-xs-12 col-sm-4">
 				<!-- Cart -->
 				<ul class="top-menu text-right list-inline">
 
@@ -138,6 +138,33 @@
 							<option>ES</option>
 						</select>
 					</li><!-- / Languages -->
+					<!-- Cart -->
+			
+
+					<li class="dropdown cart-nav dropdown-slide">
+						<a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><i
+								class="tf-ion-ios-contact"></i></a>
+						<div class="dropdown-menu user-dropdown">
+							<div class="col-lg-12 col-md-12 mb-sm-3">
+									<ul>
+										<li class="dropdown-header">User Area</li>
+										<li role="separator" class="divider"></li>
+										<li><a href="{{ route('login') }}">Login</a></li>
+										<li><a href="{{ route('register-user') }}">Crear Cuenta</a></li>
+										<li><a href="cart.html">Carro de compra</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="{{ route('signout') }}">logout</a></li>
+
+									</ul>
+								</div>
+							
+							
+
+							
+						</div>
+
+					</li><!-- / Cart -->
+
 
 				</ul><!-- / .nav .navbar-nav .navbar-right -->
 			</div>
