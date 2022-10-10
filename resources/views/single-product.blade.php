@@ -1,6 +1,7 @@
 @extends ('layouts.base')
 @section('content')
 
+<div class="container">
 <div class="row mt-20">
 			<div class="col-md-5">
 				<div class="single-product-slider">
@@ -115,4 +116,5 @@
 				</div>
 			</div>
 		</div>
+	</div>	
 		@endsection

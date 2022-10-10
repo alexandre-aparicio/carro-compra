@@ -66,14 +66,7 @@
 								<a href="#!" class="remove"><i class="tf-ion-close"></i></a>
 							</div><!-- / Cart Item -->
 
-							<div class="cart-summary">
-								<span>Total</span>
-								<span class="total-price">$1799.00</span>
-							</div>
-							<ul class="text-center cart-buttons">
-								<li><a href="cart.html" class="btn btn-small">View Cart</a></li>
-								<li><a href="checkout.html" class="btn btn-small btn-solid-border">Checkout</a></li>
-							</ul>
+							
 						</div>
 
 					</li><!-- / Cart -->
