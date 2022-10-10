@@ -7,6 +7,8 @@ use App\Http\Controllers\CarroController;
 
 
 Route::get('/', [ProductoController::class, 'index'])->name('index');
+Route::get('productos/{id}', [ProductoController::class, 'show'])->name('single-product');
+
 //Route::get('categoria/{id}', [CategoriaController::class, 'show'])->name('categoria');
 
 //Route::post('cart-insert/', [CarroController::class, 'store'])->name('cart-insert');

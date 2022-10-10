@@ -671,28 +671,37 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
   display: inline-block;
 }
 
-.cart-dropdown .media {
+.fav-dropdown {
+      margin: 0px 60px 0 0;
+}
+
+.cart-dropdown .media, .fav-dropdown .media {
   position: relative;
   border-bottom: 1px solid #dedede;
   padding-bottom: 15px;
 }
-.cart-dropdown .media .pull-left {
+.cart-dropdown .media .pull-left, .fav-dropdown .media .pull-left {
   padding-right: 15px;
 }
-.cart-dropdown img {
-  width: 60px;
+
+.cart-dropdown img, .fav-dropdown img {
+    width: 60px;
 }
-.cart-dropdown h4 {
+
+.cart-dropdown h4, .fav-dropdown h4 {
   color: #000;
   font-weight: 300;
   font-size: 14px;
 }
-.cart-dropdown .cart-price {
+.cart-dropdown img {
+    width: 60px;
+}
+.cart-dropdown .cart-price, .fav-dropdown .cart-price {
   color: #7f7f7f;
   font-size: 12px;
   font-weight: 200;
 }
-.cart-dropdown .remove {
+.cart-dropdown .remove, .fav-dropdown .remove {
   padding: 1px 6px;
   position: absolute;
   right: 0;

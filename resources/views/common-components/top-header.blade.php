@@ -34,7 +34,7 @@
 					<li class="dropdown cart-nav dropdown-slide">
 						<a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><i
 								class="tf-ion-ios-heart"></i>Saved Items</a>
-						<div class="dropdown-menu cart-dropdown">
+						<div class="dropdown-menu fav-dropdown">
 							<!-- Cart Item -->
 							<div class="media">
 								<a class="pull-left" href="#!">

@@ -24,4 +24,14 @@ class ProductoController extends Controller
 
         
     }
+
+    public function show( Producto $id)
+    {
+        
+        $datos = [];
+
+             
+        
+        return view('single-product', $datos);
+    }
 }
