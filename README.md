@@ -44,21 +44,20 @@ Se crea la base de datos MySQL con el sistema de migraciones. Se compone de las 
 ### Páginas
 
 #### Apartado Usuario 
-- Loguin ❌ [How](https://www.positronx.io/laravel-custom-authentication-login-and-registration-tutorial/)
-- Registro ❌
-- Mail de confirmación de registro ❌ [How](https://dev.to/shanisingh03/how-to-send-email-in-laravel-9--13db)
+- Loguin ✔ [How](https://www.positronx.io/laravel-custom-authentication-login-and-registration-tutorial/)
+- Registro ✔
+- Mail de confirmación de registro ✔ [How](https://dev.to/shanisingh03/how-to-send-email-in-laravel-9--13db)
 - Recuperación de contraseña ❌
 
 #### Apartado Panel de Control
 - Panel de Usuario ❌
 
 #### Apartado Páginas
-- Menú Superior ❌
-- Main Home ❌
+- Menú Superior ✔
+- Main Home ✔
 - Main Ver productos por categoría ❌
 - Main Ver productos por más vendidos ❌
 - Elementos de la cesta de la compra ❌
-- Elementos Laterales ❌
 - Buscador con consulta asíncrona Ajax ❌
 
 #### Footer
