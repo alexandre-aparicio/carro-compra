@@ -15,9 +15,9 @@ use App\Http\Controllers\CarroController;
 |
 */
 
-Route::get('/', [ProductoController::class, 'index'])->name('welcome');
-Route::get('categoria/{id}', [CategoriaController::class, 'show'])->name('categoria');
+Route::get('/', [ProductoController::class, 'index'])->name('index');
+//Route::get('categoria/{id}', [CategoriaController::class, 'show'])->name('categoria');
 
-Route::post('cart-insert/', [CarroController::class, 'store'])->name('cart-insert');
+//Route::post('cart-insert/', [CarroController::class, 'store'])->name('cart-insert');
 
-Route::delete('cart-delete/{id}', [CarroController::class, 'destroy'])->name('cart-delete');
+//Route::delete('cart-delete/{id}', [CarroController::class, 'destroy'])->name('cart-delete');

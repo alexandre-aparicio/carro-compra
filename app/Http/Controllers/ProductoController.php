@@ -20,7 +20,7 @@ class ProductoController extends Controller
         ->get(['productos.*', 'carros.cantidad', 'carros.id AS carro_id', 'categorias.nombre AS cat_nombre']); 
 
 
-        return view('welcome', ['categorias' => $categorias, 'categoria_act' => null, 'productos'=>$productos, 'carro'=>$carro]);
+        return view('index', ['categorias' => $categorias, 'categoria_act' => null, 'productos'=>$productos, 'carro'=>$carro]);
 
         
     }
