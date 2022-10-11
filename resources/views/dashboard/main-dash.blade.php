@@ -12,17 +12,30 @@
     <!-- Pignose Calender -->
     <link href="{{ asset('dash-assets/plugins/pg-calendar/css/pignose.calendar.min.css') }}" rel="stylesheet">
     <!-- Chartist -->
+    
+
     <link rel="stylesheet" href="{{ asset('dash-assets/plugins/chartist/css/chartist.min.css') }}">
     <link rel="stylesheet" href="{{ asset('dash-assets/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css') }}">
     <!-- Custom Stylesheet -->
     <link href="{{ asset('dash-assets/css/style.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
 <body>
 
+    
+
+    
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
     <div id="main-wrapper">
 
+        <!--**********************************
+            Nav header start
+        ***********************************-->
         <div class="nav-header">
             <div class="brand-logo">
                 <a href="index.html">
