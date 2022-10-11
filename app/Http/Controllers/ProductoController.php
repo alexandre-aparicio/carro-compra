@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Models\Producto;
 use App\Models\Categoria;
 use App\Models\Carro;
@@ -35,8 +36,10 @@ class ProductoController extends Controller
 
     public function dashArticles()
     {
-        $productos = Producto::join('categorias', 'categorias.id', '=', 'productos.categoria_id')
-        ->get(['productos.*', 'categorias.nombre AS categoria_nombre']);             
+        
+        // Esta es la formula para emplear el paginate con un join
+        $productos = Producto::join('categorias', 'productos.categoria_id', '=', 'categorias.id')->select('productos.*' ,'categorias.*')->paginate(5);
+               
         
 
 

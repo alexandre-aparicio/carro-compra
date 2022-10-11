@@ -45,12 +45,13 @@ Se crea la base de datos MySQL con el sistema de migraciones. Se compone de las 
 
 #### Apartado Usuario 
 - Loguin ✔ [How](https://www.positronx.io/laravel-custom-authentication-login-and-registration-tutorial/)
-- Registro ✔
+- Registro ✔ [How](https://www.positronx.io/laravel-custom-authentication-login-and-registration-tutorial/)
 - Mail de confirmación de registro ✔ [How](https://dev.to/shanisingh03/how-to-send-email-in-laravel-9--13db)
 - Recuperación de contraseña ❌
 
 #### Apartado Panel de Control
-- Panel de Usuario ❌
+- Panel de Usuario ✔
+- Paginación [How](https://codeanddeploy.com/blog/laravel/laravel-8-pagination-example-using-bootstrap-5)✔
 
 #### Apartado Páginas
 - Menú Superior ✔
@@ -59,6 +60,7 @@ Se crea la base de datos MySQL con el sistema de migraciones. Se compone de las 
 - Main Ver productos por más vendidos ❌
 - Elementos de la cesta de la compra ❌
 - Buscador con consulta asíncrona Ajax ❌
+
 
 #### Footer
 - Formulario de suscripción ❌
