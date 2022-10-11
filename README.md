@@ -56,7 +56,7 @@ Se crea la base de datos MySQL con el sistema de migraciones. Se compone de las 
 #### Apartado Páginas
 - Menú Superior ✔
 - Main Home ✔
-- Main Ver productos por categoría ❌
+- Main Ver productos por categoría ❌ Pendiante de hacer
 - Main Ver productos por más vendidos ❌
 - Elementos de la cesta de la compra ❌
 - Buscador con consulta asíncrona Ajax ❌
