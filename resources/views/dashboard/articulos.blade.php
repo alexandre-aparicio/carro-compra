@@ -244,63 +244,67 @@
          </div>
          
          <div class="content-body">
-            <div class="container-fluid mt-3">
-               <div class="row">
-                  <div class="col-lg-3 col-sm-6">
-                     <div class="card gradient-1">
-                        <div class="card-body">
-                           <h3 class="card-title text-white">Products Sold</h3>
-                           <div class="d-inline-block">
-                              <h2 class="text-white">4565</h2>
-                              <p class="text-white mb-0">Jan - March 2019</p>
-                           </div>
-                           <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span>
+
+            <div class="row page-titles mx-0">
+                <div class="col p-md-0">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- row -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Data Table</h4>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered zero-configuration">
+                                        <thead>
+                                            <tr>
+                                                <th>Artículo</th>
+                                                <th>Categoría</th>
+                                                <th>Precio</th>
+                                                <th>Imagen</th>
+                                                <th>Feacha</th>
+                                                <th>Opciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>  
+                                        @foreach ($articulos as $articulo)                                          
+                                            <tr>                                      
+
+                                                <td>{{ $articulo->nombre}}</td>
+                                                <td>{{ $articulo->categoria_nombre}}</td>
+                                                <td>$ {{ number_format($articulo->precio, 2)}}</td>
+                                                <td>27</td>
+                                                <td>2011/01/25</td>
+                                                <td>$112,000</td>
+                                            </tr>
+                                            @endforeach
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Office</th>
+                                                <th>Age</th>
+                                                <th>Start date</th>
+                                                <th>Salary</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                     <div class="card gradient-2">
-                        <div class="card-body">
-                           <h3 class="card-title text-white">Net Profit</h3>
-                           <div class="d-inline-block">
-                              <h2 class="text-white">$ 8541</h2>
-                              <p class="text-white mb-0">Jan - March 2019</p>
-                           </div>
-                           <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                     <div class="card gradient-3">
-                        <div class="card-body">
-                           <h3 class="card-title text-white">New Customers</h3>
-                           <div class="d-inline-block">
-                              <h2 class="text-white">4565</h2>
-                              <p class="text-white mb-0">Jan - March 2019</p>
-                           </div>
-                           <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                     <div class="card gradient-4">
-                        <div class="card-body">
-                           <h3 class="card-title text-white">Customer Satisfaction</h3>
-                           <div class="d-inline-block">
-                              <h2 class="text-white">99%</h2>
-                              <p class="text-white mb-0">Jan - March 2019</p>
-                           </div>
-                           <span class="float-right display-5 opacity-5"><i class="fa fa-heart"></i></span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               
-               
-               
-               
+                    </div>
+                </div>
+            </div>
             <!-- #/ container -->
-         </div>
+        </div>
          <!--**********************************
             Content body end
             ***********************************-->

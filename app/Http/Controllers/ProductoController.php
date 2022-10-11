@@ -20,9 +20,7 @@ class ProductoController extends Controller
         ->get(['productos.*', 'carros.cantidad', 'carros.id AS carro_id', 'categorias.nombre AS cat_nombre']); 
 
 
-        return view('index', ['categorias' => $categorias, 'categoria_act' => null, 'productos'=>$productos, 'carro'=>$carro]);
-
-        
+        return view('index', ['categorias' => $categorias, 'categoria_act' => null, 'productos'=>$productos, 'carro'=>$carro]);        
     }
 
     public function show( Producto $id)
@@ -33,5 +31,15 @@ class ProductoController extends Controller
              
         
         return view('single-product', $datos);
+    }
+
+    public function dashArticles()
+    {
+        $productos = Producto::join('categorias', 'categorias.id', '=', 'productos.categoria_id')
+        ->get(['productos.*', 'categorias.nombre AS categoria_nombre']);             
+        
+
+
+        return view('dashboard.articulos', ['articulos'=>$productos]);        
     }
 }
